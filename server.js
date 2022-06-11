@@ -31,6 +31,6 @@ app.get('/api/formulae/:shapeName', (req, res)=>{
 /*app.get('/api', (req,res)=>{
     res.json(savage)
 })*/
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`listening on ${PORT}`)
 })

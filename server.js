@@ -18,7 +18,7 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html' );
 })
 
-app.get('/api/formulae/:shapeName', (req, res)=>{
+app.get('/formulae/:shapeName', (req, res)=>{
     const shape = req.params.shapeName.toLowerCase()
     console.log(shape)
     if(areaPerimeter[shape]){
